@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  nav, footer, .fixed, .absolute {
+    display: none !important;
+  }
+  
+  section {
+    page-break-inside: avoid;
+    padding: 2rem 0 !important;
+    background: transparent !important;
+    border: none !important;
+  }
+  
+  * {
+    color: black !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-color: #e5e7eb !important;
+  }
+}
